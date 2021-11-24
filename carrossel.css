@@ -2,15 +2,6 @@
     background-color: #21D19F;
 }
 
-.sec_campanhas .carousel-inner img {
-    max-width: 70%;
-    margin: 15px 10px 45px 100px;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
-
 .carousel-indicators li {
     border-radius: 70%;
     height: 12px;
