@@ -34,12 +34,13 @@ onload = () => {
   localStorage.setItem("fakes", JSON.stringify(imagens));
 
   //------- apresentar as imagens do localStorage -------
-  var divImagens = document.getElementById("carrossel_img");
-  var imgs = JSON.parse(localStorage.getItem("fakes"));
+  var divImagens = document.getElementById("carrossel_img"); //pega a div que será colocada o código das imagens
+  var imgs = JSON.parse(localStorage.getItem("fakes")); //pega, em forma de objeto, o JSON salvo no localStorage
 
-  let colocar = "";
+  let colocar = "";//variável na qual o código da imagem será inserido
 
-  for (let i = 0; i < imgs.lenght; i++) {
+  //for para inserir todas as imagens salvas no localStorage
+  for (let i = 0; i < imgs.length; i++) {
     let imgInfo = imgs[i];
 
     if (i == 0) {
@@ -53,4 +54,24 @@ onload = () => {
   }
 
   divImagens.innerHTML = colocar;
+
+  //------- alerta para quando os botões ilustrativos forem acionados -------
+  add.onclick = () => {
+    alerta();
+  };
+
+  excluir.onclick = () => {
+    alerta();
+  };
+
+  alterar.onclick = () => {
+    alerta();
+  };
+
+  //------- função de alerta -------
+  function alerta() {
+    alert(
+      "Função não disponível! Botão ilustrativo!\nAguarde a sprint 4. Obrigada!"
+    );
+  }
 };
