@@ -53,20 +53,13 @@ onload = () => {
       colocarIMG += `<div class="carousel-item active">`;
 
       //--- adicionando o indicador no carrossel ---
-      colocarIndicador += `<li
-      data-target="#carouselExampleIndicators"
-      data-slide-to="${i}"
-      class="active"
-    ></li>`;
+      colocarIndicador += `<li data-target="#carouselExampleIndicators" data-slide-to="${i}" class="active" ></li>`;
     } else {
       //--- adicionando a div do carrossel ---
       colocarIMG += `<div class="carousel-item">`;
 
       //--- adicionando o indicador no carrossel ---
-      colocarIndicador += `<li
-      data-target="#carouselExampleIndicators"
-      data-slide-to="${i}"
-    ></li>`;
+      colocarIndicador += `<li data-target="#carouselExampleIndicators" data-slide-to="${i}" ></li>`;
     }
 
     colocarIMG += `<img class="img_car" src="${imgInfo.imagem}" alt="ID ${imgInfo.id}" width="100%" height="400">
