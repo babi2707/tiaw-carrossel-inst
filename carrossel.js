@@ -29,31 +29,52 @@ onload = () => {
       imagem: "imgs/logo4.png",
     },
   ];
+  //---------------------------------
 
   //------- guardando os dados fakes no localStorage -------
   localStorage.setItem("fakes", JSON.stringify(imagens));
 
   //------- apresentar as imagens do localStorage -------
   var divImagens = document.getElementById("carrossel_img"); //pega a div que será colocada o código das imagens
+  var olIndicadores = document.getElementById("indicadores"); //pega a div que será colocada o código dos indicadores
+
   var imgs = JSON.parse(localStorage.getItem("fakes")); //pega, em forma de objeto, o JSON salvo no localStorage
 
-  let colocar = "";//variável na qual o código da imagem será inserido
+  let colocarIMG = ""; //variável na qual o código da imagem será inserido
+  let colocarIndicador = ""; //variável na qual o código do indicador será inserido
 
   //for para inserir todas as imagens salvas no localStorage
   for (let i = 0; i < imgs.length; i++) {
     let imgInfo = imgs[i];
 
     if (i == 0) {
-      colocar += `<div class="carousel-item active">`;
+      //--- adicionando a div com a ativação do carrossel ---
+      // += para ir adicionando de acordo com a quantidade de itens no localStorage
+      colocarIMG += `<div class="carousel-item active">`;
+
+      //--- adicionando o indicador no carrossel ---
+      colocarIndicador += `<li
+      data-target="#carouselExampleIndicators"
+      data-slide-to="${i}"
+      class="active"
+    ></li>`;
     } else {
-      colocar += `<div class="carousel-item">`;
+      //--- adicionando a div do carrossel ---
+      colocarIMG += `<div class="carousel-item">`;
+
+      //--- adicionando o indicador no carrossel ---
+      colocarIndicador += `<li
+      data-target="#carouselExampleIndicators"
+      data-slide-to="${i}"
+    ></li>`;
     }
 
-    colocar += `<img class="img_car" src="${imgInfo.imagem}" alt="ID ${imgInfo.id}" width="100%" height="400">
+    colocarIMG += `<img class="img_car" src="${imgInfo.imagem}" alt="ID ${imgInfo.id}" width="100%" height="400">
       </div>`;
   }
 
-  divImagens.innerHTML = colocar;
+  divImagens.innerHTML = colocarIMG; //adicionar o código novo no HTML
+  olIndicadores.innerHTML = colocarIndicador; //adicionar o código novo no HTML
 
   //------- alerta para quando os botões ilustrativos forem acionados -------
   add.onclick = () => {
