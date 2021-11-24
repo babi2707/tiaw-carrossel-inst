@@ -49,7 +49,7 @@ onload = () => {
       colocar += `<div class="carousel-item">`;
     }
 
-    colocar += `<img class="img_car" src="${imgInfo.imagem}" alt="ID ${imgInfo.id}" width="100" height="100">
+    colocar += `<img class="img_car" src="${imgInfo.imagem}" alt="ID ${imgInfo.id}" width="100%" height="400">
       </div>`;
   }
 
