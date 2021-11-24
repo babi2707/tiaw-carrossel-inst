@@ -66,9 +66,6 @@ onload = () => {
       colocarIndicador += `<li data-target="#carouselExampleIndicators" data-slide-to="${i}" ></li>`;
     }
 
-    colocarIMG += `<img class="img_car" src="${imgInfo.imagem}" alt="ID ${imgInfo.id}" width="100%" height="450">
-      </div>`;
-
     carrossel_img.onclick = () => {
       if (imgInfo.categoria == 0) {
         imgInfo.categoria = "Livros";
@@ -82,6 +79,9 @@ onload = () => {
         `ID:  ${imgInfo.id} \nNone:  ${imgInfo.nomeInst} \nCategoria:  ${imgInfo.categoria}`
       );
     };
+
+    colocarIMG += `<img class="img_car" src="${imgInfo.imagem}" alt="ID ${imgInfo.id}" width="100%" height="450">
+      </div>`;
   }
 
   divImagens.innerHTML = colocarIMG; //adicionar o código novo no HTML
