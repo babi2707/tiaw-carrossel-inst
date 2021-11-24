@@ -1,5 +1,19 @@
 .sec_campanhas {
     background-color: #21D19F;
+    margin: 0px 20px;
+    border-radius: 5px;
+}
+
+.carousel-control-prev {
+    background-color: rgba(0, 0, 0, 0.466);
+    border-radius: 3px;
+    width: 50px;
+}
+
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.466);
+    border-radius: 3px;
+    width: 50px;
 }
 
 .carousel-indicators li {

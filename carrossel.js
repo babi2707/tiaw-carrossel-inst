@@ -5,28 +5,32 @@ onload = () => {
       id: 0,
       nomeInst: "Instituição de Caridade",
       categoria: 0,
-      imagem: "imgs/logoo.png",
+      imagem:
+        "https://i2.wp.com/www.sabra.org.br/site/wp-content/uploads/2021/01/entenda-como-doar-e-quais-sao-as-formas-de-doacao-para-ajudar-a-associacao-20210104131921.jpg.jpg?fit=800%2C429&ssl=1",
     },
 
     {
       id: 1,
       nomeInst: "Instituição de Roupas",
       categoria: 1,
-      imagem: "imgs/logo4.png",
+      imagem:
+        "https://raw.githubusercontent.com/httpspedroh/templates-tiaw/master/assets/images/logo_gg.png",
     },
 
     {
       id: 2,
       nomeInst: "Instituição de Livros",
       categoria: 0,
-      imagem: "imgs/logo3.png",
+      imagem:
+        "https://www.prorim.org.br/wp-content/uploads/sites/4/2019/08/QUERO-DOAR-1.png",
     },
 
     {
       id: 3,
       nomeInst: "Instituição de Brinquedos",
       categoria: 3,
-      imagem: "imgs/logo4.png",
+      imagem:
+        "https://thumbs.dreamstime.com/b/ilustra%C3%A7%C3%A3o-feita-%C3%A0-m%C3%A3o-do-conceito-de-caridade-doa%C3%A7%C3%A3o-roupas-elementos-estilo-desenho-rabisco-da-caixa-para-o-%C3%ADcone-banner-172184835.jpg",
     },
   ];
   //---------------------------------
@@ -50,19 +54,19 @@ onload = () => {
     if (i == 0) {
       //--- adicionando a div com a ativação do carrossel ---
       // += para ir adicionando de acordo com a quantidade de itens no localStorage
-      colocarIMG += `<div class="carousel-item active">`;
+      colocarIMG += `<div class="carousel-item active" data-bs-interval="400">`;
 
       //--- adicionando o indicador no carrossel ---
       colocarIndicador += `<li data-target="#carouselExampleIndicators" data-slide-to="${i}" class="active" ></li>`;
     } else {
       //--- adicionando a div do carrossel ---
-      colocarIMG += `<div class="carousel-item">`;
+      colocarIMG += `<div class="carousel-item" data-bs-interval="400">`;
 
       //--- adicionando o indicador no carrossel ---
       colocarIndicador += `<li data-target="#carouselExampleIndicators" data-slide-to="${i}" ></li>`;
     }
 
-    colocarIMG += `<img class="img_car" src="${imgInfo.imagem}" alt="ID ${imgInfo.id}" width="100%" height="400">
+    colocarIMG += `<img class="img_car" src="${imgInfo.imagem}" alt="ID ${imgInfo.id}" width="100%" height="450">
       </div>`;
   }
 
