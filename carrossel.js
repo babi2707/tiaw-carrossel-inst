@@ -66,20 +66,6 @@ onload = () => {
       colocarIndicador += `<li data-target="#carouselExampleIndicators" data-slide-to="${i}" ></li>`;
     }
 
-    carrossel_img.onclick = () => {
-      if (imgInfo.categoria == 0) {
-        imgInfo.categoria = "Livros";
-      } else if (imgInfo.categoria == 1) {
-        imgInfo.categoria = "Roupas";
-      } else if (imgInfo.categoria == 3) {
-        imgInfo.categoria = "Brinquedos";
-      }
-
-      alert(
-        `ID:  ${imgInfo.id} \nNone:  ${imgInfo.nomeInst} \nCategoria:  ${imgInfo.categoria}`
-      );
-    };
-
     colocarIMG += `<img class="img_car" src="${imgInfo.imagem}" alt="ID ${imgInfo.id}" width="100%" height="450">
       </div>`;
   }
