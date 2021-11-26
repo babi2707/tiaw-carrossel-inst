@@ -14,7 +14,7 @@ onload = () => {
       nomeInst: "Instituição de Roupas",
       categoria: 1,
       imagem:
-        "https://raw.githubusercontent.com/httpspedroh/templates-tiaw/master/assets/images/logo_gg.png",
+      "https://thumbs.dreamstime.com/b/ilustra%C3%A7%C3%A3o-feita-%C3%A0-m%C3%A3o-do-conceito-de-caridade-doa%C3%A7%C3%A3o-roupas-elementos-estilo-desenho-rabisco-da-caixa-para-o-%C3%ADcone-banner-172184835.jpg",
     },
 
     {
@@ -30,7 +30,7 @@ onload = () => {
       nomeInst: "Instituição de Brinquedos",
       categoria: 3,
       imagem:
-        "https://thumbs.dreamstime.com/b/ilustra%C3%A7%C3%A3o-feita-%C3%A0-m%C3%A3o-do-conceito-de-caridade-doa%C3%A7%C3%A3o-roupas-elementos-estilo-desenho-rabisco-da-caixa-para-o-%C3%ADcone-banner-172184835.jpg",
+        "https://lh3.googleusercontent.com/proxy/14iepgMChkHj2yujRaG8kFahSj_YyS9ZI9nPSwAphP3_w9smdPC-WM39Z7gRQd-MkwUBI9ma0hrUlnPDzG0OV4XHFXoMa1FiPSbnPcTvC-ZoYQPbOy2EaX05syhOY8QCWKDIS89NE7EaS5w8wCvmoax-AXqMUzc-dfvGYgLw8OS-C8UQ7w0WS8BUw92_qovnWkOeq7tW_WuEtjATvXh5JG9kCQ",
     },
   ];
   //---------------------------------
